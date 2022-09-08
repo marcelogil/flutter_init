@@ -17,7 +17,7 @@ The only packages used should speed up your development process:
 
 ```git clone https://github.com/marcelogil/flutter_init.git your-new-project-name```
 
-2. Replace the icon image in;
+2. Replace the icon image in:
 
 ```assets/icon.png```
 
@@ -25,8 +25,19 @@ The only packages used should speed up your development process:
 
 ```flutter pub run icons_launcher:create```
 
-4. Change what you need in the project
+4. Update the app name
 
-5. Run it on your device:
+- Open ```AndroidManifest.xml``` (located at ```android/app/src/main```)
+```
+<application android:label="App Name" ...> // Your app name here
+```
+
+- Open ```info.plist``` (located at ```ios/Runner```)
+```
+<key>CFBundleDisplayName</key>
+<string>App Name</string> // Your app name here
+```
+
+5. Run it on your device or simulator:
 
 ```flutter run```
