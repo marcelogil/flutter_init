@@ -1,0 +1,43 @@
+name: flutter_init
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+  icons_launcher: ^2.0.5
+  provider: ^6.0.3
+  
+icons_launcher: 
+  image_path: 'assets/icon.png'
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  lint: ^1.10.0
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
